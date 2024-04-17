@@ -31,15 +31,35 @@ export default function Welcome() {
     <>
       <div
         id="welcome"
-        className="container-full justify-center px-52  flex bg-gray-200 text-black w-screen h-screen"
+        className="justify-center xl:mx-72 lg:mx-32 md:mx-20 sm:mx-10 xs:mx-5 flex text-black justify-center h-screen"
       >
-        <div className="pt-40 mr-52 ">
-          <p className="text-4xl font-bold">Hi, I'm Mohammad Jury</p>
-          <span ref={typingRef} className="text-4xl font-bold"></span>
-          <p className="text-4xl font-bold">Based In Nablus</p>
+        <div className="container pt-40 mr-52">
+          <div className=" ">
+            <p className="text-4xl font-bold mb-5">Hi, I'm Mohammad Jury</p>
+            <span ref={typingRef} className="text-4xl font-bold"></span>
+            <p className="text-4xl font-bold my-5">Based In Nablus</p>
+          </div>
+          <p>
+            I'm a Computer Engineer, Interests in Software Engineering,
+            especially Full Stack Development.
+          </p>
+          <div className="my-10 flex">
+            <button className="w-1/3 py-3 px-2 mr-10 bg-black hover:bg-gray-900 text-white font-semibold rounded shadow-md">
+              Some Projects
+            </button>
+
+            <button className="py-3 px-2 w-1/3 bg-black hover:bg-gray-900 text-white font-semibold rounded shadow-md">
+              Contact Me
+            </button>
+          </div>
+          <div className="border-l-4 font-semibold p-2 border-black">
+            <p>mohammadjury00@gmail.com</p>
+            <p>+970-595700706</p>
+            <p>Palestine, Nablus</p>
+          </div>
         </div>
 
-        <div className="pt-28">
+        <div className=" pt-28">
           <img style={{ width: "400px" }} src={myImage.src}></img>
         </div>
       </div>

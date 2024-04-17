@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .Welcome {
+  background-image: url(../../public/blue.jpg);
+  background-size: cover;
+  height: 100vh;
+} */
+
 @media (prefers-color-scheme: dark) {
 }
 

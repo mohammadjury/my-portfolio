@@ -6,7 +6,7 @@ import NavButton from "./NavButton";
 export default function Header() {
   return (
     <>
-      <header className=" bg-gray-200 text-black font-bold py-4 sticky top-0 left-0 right-0 z-10">
+      <header className="  text-black font-semibold py-4 fixed top-0 left-0 right-0 z-10">
         <div className="container-full px-10 mx-auto flex justify-between items-center">
           <h1 className="text-3xl">Mohammad Jury</h1>
           <nav>
