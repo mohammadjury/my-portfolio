@@ -1,16 +1,57 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import NavButton from "./NavButton";
+import CollapseButton from "./CollapseButton";
+import CollapseMenu from "./CollapseMenu";
 
 export default function Header() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
+  const headerRef = useRef<HTMLDivElement>(null);
+  const scrollThreshold = 850;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = headerRef.current;
+      if (header) {
+        if (window.scrollY >= scrollThreshold) {
+          header.style.backgroundColor = "#6f00ff";
+          header.style.transition = "1s ease";
+        } else {
+          header.style.backgroundColor = "transparent";
+          header.style.transition = "1s ease";
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="  text-black font-semibold py-4 fixed top-0 left-0 right-0 z-10">
-        <div className="container-full px-10 mx-auto flex justify-between items-center">
-          <h1 className="text-3xl">Mohammad Jury</h1>
+      <header
+        ref={headerRef}
+        id="header"
+        className="header container-full text-white font-semibold py-4 fixed top-0 left-0 right-0 z-10"
+      >
+        <div className="container-full px-2 mx-auto flex justify-between sm:items-center">
+          <div>
+            <h1 className="text-2xl flex-col items-start">Mohammad Jury</h1>
+
+            <CollapseMenu isMenuOpen={isMenuOpen} />
+          </div>
           <nav>
-            <ul className="flex space-x-4">
+            <CollapseButton toggleMenu={toggleMenu} />
+            <ul className="hidden sm:flex space-x-4 self-center">
               <li>
                 <NavButton name="Welcome" id="welcome" />
               </li>

@@ -17,7 +17,7 @@ const NavButton: React.FC<NavButtonProps> = (props) => {
   };
 
   return (
-    <button onClick={handleClick} className="hover:text-gray-700">
+    <button onClick={handleClick} className="text-md hover:text-gray-700">
       {props.name}
     </button>
   );
