@@ -10,9 +10,13 @@ export default function Home() {
   return (
     <>
       <Welcome />
+
       <AboutMe />
+
       <Experience />
+
       <Projects />
+
       <ContactMe />
     </>
   );

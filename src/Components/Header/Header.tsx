@@ -59,6 +59,10 @@ export default function Header() {
                 <NavButton name="About Me" id="aboutme" />
               </li>
               <li>
+                <NavButton name="Experience" id="experience" />
+              </li>
+
+              <li>
                 <NavButton name="Projects" id="projects" />
               </li>
               <li>
