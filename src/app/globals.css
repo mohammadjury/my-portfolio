@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 .Welcome {
-  background-image: url(../../public/cool-background.png);
+  /* background-image: url(../../public/cool-background.png); */
+  /* background-image: url(../../public/background1.jpeg); */
+  background-image: url(../../public/background1.jpeg);
   background-size: cover;
   height: 100vh;
 }

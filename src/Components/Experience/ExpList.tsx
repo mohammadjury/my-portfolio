@@ -5,22 +5,16 @@ export default function ExpList() {
     <>
       <ol className="relative border-l-2 border-purple-400 border-purple-800">
         <ExpListItem
-          ExpTime="January 2024"
-          ExpTitle="Application UI code in Tailwind CSS"
-          ExpDescription="Get access to over 20+ pages including a dashboard layout, charts,
-      kanban board, calendar, and pre-order E-commerce & Marketing pages."
+          ExpTime="2023 - 2024"
+          ExpTitle="Frontend Developer @Orienteed"
+          ExpDescription="Gained hands-on experience in various projects, enhancing skills in JavaScript, React JS,
+          bootstrap, Node JS, ASP.NET and SQL."
         />
         <ExpListItem
-          ExpTime="January 2024"
-          ExpTitle="Application UI code in Tailwind CSS"
-          ExpDescription="Get access to over 20+ pages including a dashboard layout, charts,
-      kanban board, calendar, and pre-order E-commerce & Marketing pages."
-        />
-        <ExpListItem
-          ExpTime="January 2024"
-          ExpTitle="Application UI code in Tailwind CSS"
-          ExpDescription="Get access to over 20+ pages including a dashboard layout, charts,
-      kanban board, calendar, and pre-order E-commerce & Marketing pages."
+          ExpTime="2022 - 2023"
+          ExpTitle="Full Stack Developer - Freelancer"
+          ExpDescription="created a responsive web application with React JS, integrating backend
+          functionality for restaurants and bars."
         />
       </ol>
     </>

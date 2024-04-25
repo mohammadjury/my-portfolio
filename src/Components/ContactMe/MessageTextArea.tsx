@@ -1,10 +1,22 @@
-export default function MessageTextArea() {
+"use client";
+
+interface IMessageTextArea {
+  message: string;
+  setMessage: Function;
+}
+
+export default function MessageTextArea(props: IMessageTextArea) {
+  const messageValue = (message: string) => {
+    props.setMessage(message);
+  };
   return (
     <>
       <div className="relative z-0 w-full mb-5 group ">
         <textarea
           name="floating_message"
           id="floating_message"
+          value={props.message}
+          onChange={(e) => messageValue(e.target.value)}
           className="h-[180px] block py-5 px-0 w-full text-sm text-violet-900 bg-transparent border-0 border-b-2 border-purple-400 appearance-none focus:outline-none focus:ring-0 focus:border-purple-700 peer"
           placeholder=" "
           required

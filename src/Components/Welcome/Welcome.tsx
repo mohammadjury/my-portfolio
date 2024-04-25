@@ -4,6 +4,7 @@ import AutoTyping from "./AutoTyping";
 import WelcomeButtons from "./WelcomeButtons";
 import Addresses from "./Addresses";
 import PersonalPhoto from "./PersonalPhoto";
+import SocialAccounts from "./SocialAccounts";
 
 export default function Welcome() {
   return (
@@ -16,6 +17,7 @@ export default function Welcome() {
           <div className="">
             <AutoTyping />
             <WelcomeButtons />
+            <SocialAccounts />
             <Addresses />
           </div>
           <PersonalPhoto />
