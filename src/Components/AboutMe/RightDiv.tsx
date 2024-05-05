@@ -1,4 +1,5 @@
 import downloadIcon from "../../../public/download-icon.png";
+import Image from "next/image";
 export default function RightDiv() {
   return (
     <>
@@ -17,7 +18,11 @@ export default function RightDiv() {
         </div>
         <div className="flex self-center mt-5">
           <button className=" flex gap-1 justify-center items-center py-3 text-lg px-10 bg-purple-700 hover:bg-purple-600 text-white font-semibold rounded shadow">
-            <img src={downloadIcon.src}></img>
+            <Image
+              alt="Download CV"
+              src={downloadIcon}
+              width={20} // Provide the width of the image
+            />
             CV
           </button>
         </div>
