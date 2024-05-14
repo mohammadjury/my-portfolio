@@ -17,14 +17,18 @@ export default function RightDiv() {
           projects, please refer to the attached CV.
         </div>
         <div className="flex self-center mt-5">
-          <button className=" flex gap-1 justify-center items-center py-3 text-lg px-10 bg-purple-700 hover:bg-purple-600 text-white font-semibold rounded shadow">
+          <a
+            href="../../../public/Mohammad_Jury_CV.pdf"
+            download="Mohammad_Jury_CV.pdf"
+            className="flex gap-1 justify-center items-center py-3 text-lg px-10 bg-purple-700 hover:bg-purple-600 text-white font-semibold rounded shadow"
+          >
             <Image
               alt="Download CV"
               src={downloadIcon}
               width={20} // Provide the width of the image
             />
             CV
-          </button>
+          </a>
         </div>
       </div>
     </>
